@@ -1,0 +1,22 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cordinator_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.developer.pritampc.mysmsreciever.ReadSmsFrag">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_list"
+        android:scrollbars="vertical"
+        android:orientation="vertical"
+        android:elevation="6dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

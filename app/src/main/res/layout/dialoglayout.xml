@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/alert_tv"
+        android:text="Enter New Message"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/alert_ed"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:maxLength="19"
+        android:focusable="true"
+        android:hint="enter the message..."
+        android:gravity="left"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProSmsReciever</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="touch_pad_template">4 Digit Capacitive Touch Sensor</string>
+    <string name="pos_but">Send</string>
+    <string name="nev_but">Cancel</string>
+    <string name="Patient_Name">Enter Patient Name...</string>
+    <string name="Patient_Age"> Age</string>
+    <string name="Patient_Number">Enter Device Contact...</string>
+    <string name="Gender">Gender(M/F)</string>
+
+</resources>

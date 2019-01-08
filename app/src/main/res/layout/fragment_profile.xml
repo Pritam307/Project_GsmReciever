@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_back">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_person_black_24dp"
+            app:civ_border_width="0.6dp"
+            app:civ_border_color="#fff"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_edit"
+                android:src="@drawable/pic_edit"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+            <EditText
+            android:id="@+id/patient_name"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/Patient_Name"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:inputType="textPersonName"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp" />
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/patient_age"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="30"
+                    android:hint="@string/Patient_Age"
+                    android:inputType="phone"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/patient_sex"
+                    android:layout_width="100dp"
+                    android:layout_weight="70"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/Gender"
+                    android:inputType="text"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        <EditText
+            android:id="@+id/patient_number"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:hint="@string/Patient_Number"
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp" />
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="330dp"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="Save" />
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Clear" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+    
+
+</RelativeLayout>
